@@ -7,8 +7,8 @@ header('Access-Control-Allow-Headers:Content-Type,Access-Control-Allow-Headers,A
 error_reporting(0);
 $data = json_decode(file_get_contents("php://input"));
 include('db.php');
-// print_r($data);
-// echo '{"msg":"success"}';
+// print_r($data);      ---> helps in printing data
+// echo '{"msg":"success"}';    ---> helps in getting msg 
 // echo $data->product_name;
 
 if($data->discount==''){
